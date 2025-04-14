@@ -265,6 +265,7 @@ input[type="checkbox"] {
 .tooltip:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+  cursor: pointer;
 }
 
 .tooltip-text::after {
@@ -276,23 +277,5 @@ input[type="checkbox"] {
   border-width: 5px;
   border-style: solid;
   border-color: #333 transparent transparent transparent;
-}
 
-/* Botões adicionar/remover */
-.btn-add, .btn-remove {
-  background-color: var(--secondary-color);
-  color: white;
-  border: none;
-  padding: 8px 15px;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.btn-remove {
-  background-color: #dc3545;
-}
-
-.btn-add:hover, .btn-remove:hover {
-  opacity: 0.9;
 }
