@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    
+
+
     <div class="page">
         <header>
             <section class="top-header">
@@ -90,7 +91,8 @@
                 <h3>Dados Pessoais</h3>
                 <form>
                     <label>Nome completo*</label>
-                    <input type="text" placeholder="Digite seu nome completo" required style="text-transform: uppercase;">
+                    <input type="text" placeholder="Digite seu nome completo" required
+                        style="text-transform: uppercase;">
 
                     <label>Filiação 1</label>
                     <input type="text" style="text-transform: uppercase;">
@@ -99,7 +101,7 @@
                     <input type="text" style="text-transform: uppercase;">
 
                     <label>Data de nascimento*</label>
-                    <input type="date" required >
+                    <input type="date" required>
 
                     <label>
                         <input type="checkbox"> Emancipado
@@ -130,107 +132,83 @@
                     </select>
 
 
-                    <h3>Dados de Nascimento</h3>
-                    <label>Nacionalidade*</label>
-                    <input type="text" value="BRASIL">
+                    <div class="dados-nasc">
+                        <h3>Dados de Nascimento</h3>
+                        <label>Nacionalidade*</label>
+                        <input type="text" value="BRASIL" required>
 
-                    <label>País de nascimento*</label>
-                    <input type="text" value="BRASIL">
+                        <label>País de nascimento*</label>
+                        <input type="text" value="BRASIL" required>
 
-                    <label for="estado">Estado (UF)*</label>
-                    <select id="estado" name="estado" required>
-                        <option value="">Selecione</option>
-                        <option value="AC">Acre (AC)</option>
-                        <option value="AL">Alagoas (AL)</option>
-                        <option value="AP">Amapá (AP)</option>
-                        <option value="AM">Amazonas (AM)</option>
-                        <option value="BA">Bahia (BA)</option>
-                        <option value="CE">Ceará (CE)</option>
-                        <option value="DF">Distrito Federal (DF)</option>
-                        <option value="ES">Espírito Santo (ES)</option>
-                        <option value="GO">Goiás (GO)</option>
-                        <option value="MA">Maranhão (MA)</option>
-                        <option value="MT">Mato Grosso (MT)</option>
-                        <option value="MS">Mato Grosso do Sul (MS)</option>
-                        <option value="MG">Minas Gerais (MG)</option>
-                        <option value="PA">Pará (PA)</option>
-                        <option value="PB">Paraíba (PB)</option>
-                        <option value="PR">Paraná (PR)</option>
-                        <option value="PE">Pernambuco (PE)</option>
-                        <option value="PI">Piauí (PI)</option>
-                        <option value="RJ">Rio de Janeiro (RJ)</option>
-                        <option value="RN">Rio Grande do Norte (RN)</option>
-                        <option value="RS">Rio Grande do Sul (RS)</option>
-                        <option value="RO">Rondônia (RO)</option>
-                        <option value="RR">Roraima (RR)</option>
-                        <option value="SC">Santa Catarina (SC)</option>
-                        <option value="SP">São Paulo (SP)</option>
-                        <option value="SE">Sergipe (SE)</option>
-                        <option value="TO">Tocantins (TO)</option>
-                    </select>
+                        <label for="estado">Estado (UF)*</label>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre (AC)</option>
+                            <option value="AL">Alagoas (AL)</option>
+                            <option value="AP">Amapá (AP)</option>
+                            <option value="AM">Amazonas (AM)</option>
+                            <option value="BA">Bahia (BA)</option>
+                            <option value="CE">Ceará (CE)</option>
+                            <option value="DF">Distrito Federal (DF)</option>
+                            <option value="ES">Espírito Santo (ES)</option>
+                            <option value="GO">Goiás (GO)</option>
+                            <option value="MA">Maranhão (MA)</option>
+                            <option value="MT">Mato Grosso (MT)</option>
+                            <option value="MS">Mato Grosso do Sul (MS)</option>
+                            <option value="MG">Minas Gerais (MG)</option>
+                            <option value="PA">Pará (PA)</option>
+                            <option value="PB">Paraíba (PB)</option>
+                            <option value="PR">Paraná (PR)</option>
+                            <option value="PE">Pernambuco (PE)</option>
+                            <option value="PI">Piauí (PI)</option>
+                            <option value="RJ">Rio de Janeiro (RJ)</option>
+                            <option value="RN">Rio Grande do Norte (RN)</option>
+                            <option value="RS">Rio Grande do Sul (RS)</option>
+                            <option value="RO">Rondônia (RO)</option>
+                            <option value="RR">Roraima (RR)</option>
+                            <option value="SC">Santa Catarina (SC)</option>
+                            <option value="SP">São Paulo (SP)</option>
+                            <option value="SE">Sergipe (SE)</option>
+                            <option value="TO">Tocantins (TO)</option>
+                        </select>
 
-                    <label for="cidade">Cidade*</label>
-                    <select id="cidade" name="cidade" required>
-                        <option value="">Selecione</option>
-                        <option class="AC" value="Rio Branco">Rio Branco</option>
-                        <option class="AL" value="Maceió">Maceió</option>
-                        <option class="AP" value="Macapá">Macapá</option>
-                        <option class="AM" value="Manaus">Manaus</option>
-                        <option class="BA" value="Salvador">Salvador</option>
-                        <option class="CE" value="Fortaleza">Fortaleza</option>
-                        <option class="DF" value="Brasília">Brasília</option>
-                        <option class="ES" value="Vitória">Vitória</option>
-                        <option class="GO" value="Goiânia">Goiânia</option>
-                        <option class="MA" value="São Luís">São Luís</option>
-                        <option class="MT" value="Cuiabá">Cuiabá</option>
-                        <option class="MS" value="Campo Grande">Campo Grande</option>
-                        <option class="MG" value="Belo Horizonte">Belo Horizonte</option>
-                        <option class="PA" value="Belém">Belém</option>
-                        <option class="PB" value="João Pessoa">João Pessoa</option>
-                        <option class="PR" value="Curitiba">Curitiba</option>
-                        <option class="PE" value="Recife">Recife</option>
-                        <option class="PI" value="Teresina">Teresina</option>
-                        <option class="RJ" value="Rio de Janeiro">Rio de Janeiro</option>
-                        <option class="RN" value="Natal">Natal</option>
-                        <option class="RS" value="Porto Alegre">Porto Alegre</option>
-                        <option class="RO" value="Porto Velho">Porto Velho</option>
-                        <option class="RR" value="Boa Vista">Boa Vista</option>
-                        <option class="SC" value="Florianópolis">Florianópolis</option>
-                        <option class="SP" value="São Paulo">São Paulo</option>
-                        <option class="SE" value="Aracaju">Aracaju</option>
-                        <option class="TO" value="Palmas">Palmas</option>
-                      </select>
-                      <div class="nomes-old">
+                        <label for="cidade">Cidade*</label>
+                        <select id="cidade" name="cidade" required>
+                            <option value="">Selecione</option>
+                        </select>
+                    </div>
+                    <div class="nomes-old">
                         <h3>Nomes Anteriores</h3>
                         <div class="tooltip">
                             <i class="bi bi-question-square-fill"></i>
-                            <div class="tooltip-text">São os nomes que a pessoa já teve antes do atual, que devem ser comprovados na hora de emitir o documento.</div>
-                            
+                            <div class="tooltip-text">São os nomes que a pessoa já teve antes do atual, que devem ser
+                                comprovados na hora de emitir o documento.</div>
+
                         </div>
                         <label>Nome Anterior</label>
-                            <input type="text" style="text-transform: uppercase;">
+                        <input type="text" style="text-transform: uppercase;">
                         <label>Motivo da mudança</label>
-                            <input type="text" style="text-transform: uppercase;">
-                      </div>
-                      
+                        <input type="text" style="text-transform: uppercase;">
+                    </div>
+
 
                 </form>
             </div>
             <div class="tab-content" id="documentos">
                 <h3>Documentos</h3>
                 <p>Conteúdo da aba Documentos.</p>
-              </div>
-          
-              <div class="tab-content" id="complementares">
+            </div>
+
+            <div class="tab-content" id="complementares">
                 <h3>Dados Complementares</h3>
                 <p>Conteúdo da aba Dados Complementares.</p>
-              </div>
-          
-              <div class="tab-content" id="revisar">
+            </div>
+
+            <div class="tab-content" id="revisar">
                 <h3>Revisar Dados</h3>
                 <p>Conteúdo da aba Revisar Dados.</p>
-              </div>
-            </main>
+            </div>
+        </main>
 
 
 
@@ -239,8 +217,8 @@
 
 
     </div>
-    
-    
+
+
 
 </body>
 <script>
@@ -248,15 +226,15 @@
     const contents = document.querySelectorAll('.tab-content');
 
     buttons.forEach(button => {
-      button.addEventListener('click', () => {
-        buttons.forEach(btn => btn.classList.remove('active'));
-        contents.forEach(content => content.classList.remove('active'));
+        button.addEventListener('click', () => {
+            buttons.forEach(btn => btn.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
 
-        button.classList.add('active');
-        const tab = button.getAttribute('data-tab');
-        document.getElementById(tab).classList.add('active');
-      });
+            button.classList.add('active');
+            const tab = button.getAttribute('data-tab');
+            document.getElementById(tab).classList.add('active');
+        });
     });
-  </script>
+</script>
 
 </html>
