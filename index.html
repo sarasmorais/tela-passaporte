@@ -96,16 +96,16 @@
                 <h3>Dados Pessoais</h3>
                 <form>
                     <label>Nome completo*</label>
-                    <input type="text" placeholder="Digite seu nome completo">
+                    <input type="text" placeholder="Digite seu nome completo" required style="text-transform: uppercase;">
 
                     <label>Filiação 1</label>
-                    <input type="text">
+                    <input type="text" style="text-transform: uppercase;">
 
                     <label>Filiação 2</label>
-                    <input type="text">
+                    <input type="text" style="text-transform: uppercase;">
 
                     <label>Data de nascimento*</label>
-                    <input type="date">
+                    <input type="date" required >
 
                     <label>
                         <input type="checkbox"> Emancipado
@@ -116,7 +116,8 @@
                     </label>
 
                     <label>Sexo*</label>
-                    <select>
+                    <select id="sexo" name="sexo" required>
+                        <option value="">Selecione</option>
                         <option>Masculino</option>
                         <option>Feminino</option>
                         <option>Não Especificado</option>
@@ -213,9 +214,9 @@
                             
                         </div>
                         <label>Nome Anterior</label>
-                            <input type="text">
+                            <input type="text" style="text-transform: uppercase;">
                         <label>Motivo da mudança</label>
-                            <input type="text">
+                            <input type="text" style="text-transform: uppercase;">
                       </div>
                       
 
