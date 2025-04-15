@@ -77,8 +77,6 @@ header {
   width: 100%;
   position: absolute;
   background-color: #fff;
-
-  
   height: 0;
   overflow: hidden;
   transition: var(--transition);
@@ -187,7 +185,8 @@ main {
 
 label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
   color: #666;
   font-size: 0.9rem;
 }
@@ -228,11 +227,19 @@ select:focus {
 
 
 
+
+.dados-nasc{
+    margin-top: 30px;
+
+}
+
+
+
 .nomes-old {
   grid-column: 1 / -1;
   padding: 20px;
   border-radius: var(--border-radius);
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(166, 15, 15, 0.02);
   margin-top: 20px;
 }
 
