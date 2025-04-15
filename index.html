@@ -87,53 +87,73 @@
             </div>
 
             <div class="tab-content active" id="dados">
-                <h3>Dados Pessoais</h3>
-                <form>
-                    <label>Nome completo*</label>
-                    <input type="text" placeholder="Digite seu nome completo" required
-                        style="text-transform: uppercase;">
+                <div class="dados-pessoais">
+                    <h3>Dados Pessoais</h3>
+                    <form>
+                        <label>Nome completo*</label>
+                        <input type="text" placeholder="Digite seu nome completo" required
+                            style="text-transform: uppercase;">
 
-                    <label>Filiação 1</label>
-                    <input type="text" style="text-transform: uppercase;">
+                        <label>Sexo*</label>
+                        <select id="sexo" name="sexo" required>
+                            <option value="">Selecione</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Não Especificado</option>
+                        </select>
 
-                    <label>Filiação 2</label>
-                    <input type="text" style="text-transform: uppercase;">
+                        
+                        <label>Data de nascimento*</label>
+                        <input type="date" required>
 
-                    <label>Data de nascimento*</label>
-                    <input type="date" required>
+                        
 
-                    <div class="checkbox-group">
-                        <label>
-                            <input type="checkbox"> Emancipado
-                        </label>
+                        <label for="raca">Raça ou Cor*</label>
+                        <select id="raca" name="raca" required>
+                            <option value="">Selecione</option>
+                            <option value="branca">Branca</option>
+                            <option value="parda">Parda</option>
+                            <option value="preta">Preta</option>
+                            <option value="amarela">Amarela</option>
+                            <option value="indigena">Indígena</option>
+                            <option value="outras">Outras</option>
+                            <option value="nao-declarar">Não Desejo Declarar</option>
+                        </select>
 
-                        <label>
-                            <input type="checkbox"> Adoção Internacional
-                        </label>
-                    </div>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox"> Emancipado
+                            </label>
 
-                    <label>Sexo*</label>
-                    <select id="sexo" name="sexo" required>
-                        <option value="">Selecione</option>
-                        <option>Masculino</option>
-                        <option>Feminino</option>
-                        <option>Não Especificado</option>
-                    </select>
+                            <label>
+                                <input type="checkbox"> Adoção Internacional
+                            </label>
+                        </div>
+                        <label>Filiação 1</label>
+                        <input type="text" style="text-transform: uppercase;">
 
-                    <label for="raca">Raça ou Cor*</label>
-                    <select id="raca" name="raca" required>
-                        <option value="">Selecione</option>
-                        <option value="branca">Branca</option>
-                        <option value="parda">Parda</option>
-                        <option value="preta">Preta</option>
-                        <option value="amarela">Amarela</option>
-                        <option value="indigena">Indígena</option>
-                        <option value="outras">Outras</option>
-                        <option value="nao-declarar">Não Desejo Declarar</option>
-                    </select>
+                        <label>Sexo*</label>
+                        <select id="sexo" name="sexo" required>
+                            <option value="">Selecione</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Não Especificado</option>
+                        </select>
 
+                        <label>Filiação 2</label>
+                        <input type="text" style="text-transform: uppercase;">
 
-                    <div class="dados-nasc">
+                        <label>Sexo*</label>
+                        <select id="sexo" name="sexo" required>
+                            <option value="">Selecione</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Não Especificado</option>
+                        </select>
+
+                </div>
+
+                <div class="dados-nasc">
                         <h3>Dados de Nascimento</h3>
                         <label>Nacionalidade*</label>
                         <input type="text" value="BRASIL" required>
@@ -177,8 +197,9 @@
                         <select id="cidade" name="cidade" required>
                             <option value="">Selecione</option>
                         </select>
-                    </div>
-                    <div class="nomes-old">
+                </div>
+
+                <div class="nomes-old">
                         <h3>Nomes Anteriores</h3>
                         <div class="tooltip">
                             <i class="bi bi-question-square-fill"></i>
@@ -195,11 +216,11 @@
                         <option>Alteração por registro em cartório - PROVIMENTO 73/2018 CNJ</option>
                     </select>
 
-                    </div>
-
+                </div>
 
                 </form>
             </div>
+
             <div class="tab-content" id="documentos">
                 <h3>Documentos</h3>
                 <p>Conteúdo da aba Documentos.</p>
