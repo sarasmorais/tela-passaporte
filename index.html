@@ -14,8 +14,7 @@
 </head>
 
 <body>
-
-
+    
     <div class="page">
         <header>
             <section class="top-header">
@@ -103,13 +102,15 @@
                     <label>Data de nascimento*</label>
                     <input type="date" required>
 
-                    <label>
-                        <input type="checkbox"> Emancipado
-                    </label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox"> Emancipado
+                        </label>
 
-                    <label>
-                        <input type="checkbox"> Adoção Internacional
-                    </label>
+                        <label>
+                            <input type="checkbox"> Adoção Internacional
+                        </label>
+                    </div>
 
                     <label>Sexo*</label>
                     <select id="sexo" name="sexo" required>
@@ -181,8 +182,7 @@
                         <h3>Nomes Anteriores</h3>
                         <div class="tooltip">
                             <i class="bi bi-question-square-fill"></i>
-                            <div class="tooltip-text">São os nomes que a pessoa já teve antes do atual, que devem ser
-                                comprovados na hora de emitir o documento.</div>
+                            <div class="tooltip-text">Preenchimento obrigatório para requerente que já alterou o nome em razão de casamento, separação divórcio ou decisão judicial. Nesses casos, será obrigatória a representação da Certidão de Casamento, com as devidas averbações, ou a decisão judicial respectiva. Caso nunca tenha alterado o nome, não preencher.</div>
 
                         </div>
                         <label>Nome Anterior</label>
