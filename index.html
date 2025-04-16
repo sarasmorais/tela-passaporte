@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    
+
     <div class="page">
         <header>
             <section class="top-header">
@@ -87,9 +87,10 @@
             </div>
 
             <div class="tab-content active" id="dados">
-                <div class="dados-pessoais">
+                <form>
                     <h3>Dados Pessoais</h3>
-                    <form>
+                    
+                    <div class="dados-pessoais">
                         <label>Nome completo*</label>
                         <input type="text" placeholder="Digite seu nome completo" required
                             style="text-transform: uppercase;">
@@ -102,11 +103,11 @@
                             <option>Não Especificado</option>
                         </select>
 
-                        
+
                         <label>Data de nascimento*</label>
                         <input type="date" required>
 
-                        
+
 
                         <label for="raca">Raça ou Cor*</label>
                         <select id="raca" name="raca" required>
@@ -151,9 +152,9 @@
                             <option>Não Especificado</option>
                         </select>
 
-                </div>
+                    </div>
 
-                <div class="dados-nasc">
+                    <div class="dados-nasc">
                         <h3>Dados de Nascimento</h3>
                         <label>Nacionalidade*</label>
                         <input type="text" value="BRASIL" required>
@@ -197,26 +198,31 @@
                         <select id="cidade" name="cidade" required>
                             <option value="">Selecione</option>
                         </select>
-                </div>
+                    </div>
 
-                <div class="nomes-old">
+                    <div class="nomes-old">
                         <h3>Nomes Anteriores</h3>
-                        <div class="tooltip">
-                            <i class="bi bi-question-square-fill"></i>
-                            <div class="tooltip-text">Preenchimento obrigatório para requerente que já alterou o nome em razão de casamento, separação divórcio ou decisão judicial. Nesses casos, será obrigatória a representação da Certidão de Casamento, com as devidas averbações, ou a decisão judicial respectiva. Caso nunca tenha alterado o nome, não preencher.</div>
+                            <div class="tooltip">
+                                <i class="bi bi-question-square-fill">
+                                </i>
+                                    <div class="tooltip-text">Preenchimento obrigatório para requerente que já alterou o nome em
+                                        razão de casamento, separação divórcio ou decisão judicial. Nesses casos, será obrigatória a
+                                        representação da Certidão de Casamento, com as devidas averbações, ou a decisão judicial
+                                        respectiva. Caso nunca tenha alterado o nome, não preencher.
+                                    <div>
+                            </div>
 
-                        </div>
+                    
                         <label>Nome Anterior</label>
                         <input type="text" style="text-transform: uppercase;">
                         <label>Motivo da mudança</label>
-                        <select id="mudanca-name" name="mudanca-name" >
-                        <option value="">Selecione</option>
-                        <option>Alteração por mudança de estado civil</option>
-                        <option>Alteração por decisão judicial</option>
-                        <option>Alteração por registro em cartório - PROVIMENTO 73/2018 CNJ</option>
-                    </select>
-
-                </div>
+                        <select id="mudanca-name" name="mudanca-name">
+                            <option value="">Selecione</option>
+                            <option>Alteração por mudança de estado civil</option>
+                            <option>Alteração por decisão judicial</option>
+                            <option>Alteração por registro em cartório - PROVIMENTO 73/2018 CNJ</option>
+                        </select>
+                    </div>
 
                 </form>
             </div>
