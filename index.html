@@ -15,6 +15,11 @@
 </head>
 
 <body>
+    <div class="switch-tema">
+        <label for="switch-tema">
+            <input type="checkbox" id="switch-tema">
+        </label>
+    </div>
     <div class="page">
         <header>
             <section class="top-header">
@@ -140,12 +145,15 @@
                         <h3>Dados de Nascimento</h3>
                         <label>Nacionalidade*</label>
                         <input type="text" value="BRASIL" required>
+                        
                         <label>País de nascimento*</label>
                         <input type="text" value="BRASIL" required>
+                        
                         <label for="estado">Estado (UF)*</label>
                         <select id="estado" name="estado" required>
                             <option value="">Selecione</option>
                         </select>
+                        
                         <label for="cidade">Cidade*</label>
                         <select id="cidade" name="cidade" required>
                             <option value="">Selecione</option>
@@ -183,12 +191,11 @@
                     <div class="nomes-old">
                         <h3>Nomes Anteriores</h3>
                         <div class="tooltip">
-                            <i class="bi bi-question-square-fill"></i>
-                            <div class="tooltip-text">Preenchimento obrigatório para requerente que já alterou o nome em
-                                        razão de casamento, separação divórcio ou decisão judicial. Nesses casos, será obrigatória a
-                                        representação da Certidão de Casamento, com as devidas averbações, ou a decisão judicial
-                                        respectiva. Caso nunca tenha alterado o nome, não preencher.</div>
+                            <i class="bi bi-question-square"></i>
+                            <div class="tooltip-text">São os nomes que a pessoa já teve antes do atual, que devem ser comprovados na hora de emitir o documento.</div>
+                            
                         </div>
+                        
                         <label>Nome Anterior</label>
                         <input type="text" style="text-transform: uppercase;">
                         <label>Motivo da mudança</label>
@@ -198,6 +205,7 @@
                             <option>Alteração por decisão judicial</option>
                             <option>Alteração por registro em cartório - PROVIMENTO 73/2018 CNJ</option>
                         </select>
+
                     </div>
                 </form>
             </div>
@@ -216,10 +224,9 @@
                 <h3>Revisar Dados</h3>
                 <p>Conteúdo da aba Revisar Dados.</p>
             </div>
-
-           
-            <input class="btn btn-primary" type="submit" value="ENVIAR">
-           
+            <div class="btn-enviar">
+                <button type="submit">ENVIAR</button>
+            </div>
         </main>
     </div>
 </body>

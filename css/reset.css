@@ -8,10 +8,14 @@
 /* unidades de medida:
 vh altura
 vw largura */
-body {
-    background-color: var(--light-bg);
-    color: var(--text-dark);
-    transition: var(--transition);
-    line-height: 1.6;
-    min-height: 100vh; 
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--espacamento-padrao);
+    transition: background 0.3s, color 0.3s;
 }

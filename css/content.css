@@ -9,7 +9,6 @@
 .interface {
   display: flex;
   max-width: 1280px;
-
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -22,13 +21,18 @@
 
 header {
   width: 100%;
-  
   color: var(--primary-color);
   font-size: 20px;
   box-shadow: var(--shadow);
   margin-bottom: 30px;
   transition: var(--transition);
   border-radius: var(--border-radius);
+}
+
+
+.bottom-header{
+  margin-top: 20px;
+  align-items: center;
 }
 
 
@@ -49,6 +53,7 @@ header {
   align-items: center;
   justify-content: center;
   list-style-type: none;
+
 }
 
 .bottom-header nav ul li a {
@@ -76,24 +81,23 @@ header {
 .drop-hover .drop {
   width: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: var(--cor-fundo);
   height: 0;
   overflow: hidden;
   transition: var(--transition);
   z-index: 100;
-
-
 }
 
 .drop-hover .drop a {
   padding: 20px;
+  
+  
 
 }
 
 .drop-hover:hover .drop {
   height: auto;
-  border-radius: 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 5px;  
 }
 
 main {
@@ -102,6 +106,7 @@ main {
   margin-top: -20px;
   box-shadow: var(--shadow);
   transition: var(--transition);
+  
 }
 
 .subtitle {
@@ -114,7 +119,6 @@ main {
 
 
 
-/* Tabs */
 .tabs {
   display: flex;
   justify-content: center;
@@ -158,7 +162,7 @@ main {
   width: 90%;
 }
 
-/* Tab content */
+
 .tab-content {
   display: none;
 }
@@ -187,7 +191,6 @@ label {
   display: block;
   margin-bottom: 1rem;
   margin-top: 2rem;
-  color: #666;
   font-size: 0.9rem;
 }
 
@@ -198,45 +201,39 @@ select {
   padding: 12px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.02);
   transition: var(--transition);
+  color: var(--cor-texto);
 }
 
 input[type="text"]:focus,
 input[type="date"]:focus,
 select:focus {
   outline: none;
-  border-bottom: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--primary-color);
   background-color: rgba(0, 102, 204, 0.05);
+  
 }
-
-
-
 
   .checkbox-group{
   display: flex;
   gap: 20px;
   margin-top: 20px;
   justify-content: space-around;
+  accent-color: var(--primary-color)
   }
 
-  .checkbox-group :hover{
+.checkbox-group :hover{
       cursor: pointer;
   }
 
-
-
-
 .dados-nasc{
     padding-top: 30px;
-
 }
 
 
-
 .nomes-old {
-  grid-column: 1 / -1;
   padding: 20px;
   border-radius: var(--border-radius);
   background-color: rgba(166, 15, 15, 0.02);
@@ -248,7 +245,7 @@ select:focus {
   display: inline-block;
   position: relative;
   margin-left: 8px;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -300,4 +297,32 @@ select:focus {
   border-width: 5px;
   border-style: solid;
   border-color: #333 transparent transparent transparent;
+}
+
+.btn-enviar{
+  display: flex;
+  justify-content: right;
+  padding: 20px 0 0 0;
+  
+  
+}
+
+.btn-enviar button{
+  background-color: #4d908e; 
+  color: white; 
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  font-weight: bold; 
+  border: none; 
+  border-radius: var(--border-radius);
+  cursor: pointer; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  transition: all 0.3s ease; 
+}
+
+.btn-enviar button:hover{
+  background-color: #17915e; 
+    transform: translateY(-1px); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+  
 }
