@@ -165,6 +165,7 @@ main {
 
 .tab-content {
   display: none;
+  margin-top: 20px;
 }
 
 .tab-content.active {
@@ -325,4 +326,93 @@ select:focus {
     transform: translateY(-1px); 
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
   
+}
+
+
+
+.documentos-id{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  align-items: center;  
+  
+}
+
+.documentos-id label{
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+.documentos-id h3{
+  grid-column: 1 / 3;
+}
+
+.cpf{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  align-items: center;  
+
+}
+
+.cpf h3{
+  grid-column: 1 / 3;
+}
+
+.cpf label{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.certidão{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;  
+}
+
+.certidão h3{
+  grid-column: 1 / 2;
+}
+
+.certidão label{
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox-cert{
+  display: flex;
+  justify-content: center;
+  accent-color: var(--primary-color)
+  }
+
+.checkbox-cert :hover{
+      cursor: pointer;
+  }
+
+.checkbox-cert label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#documentos input{
+  height: 40px;
+}
+
+#documentos select{
+  height: 50px;
+}
+
+.passaporte-ant span{
+  font-size: small;
+  color: var(--cor-texto);
 }
