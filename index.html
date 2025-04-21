@@ -184,7 +184,6 @@
                         <label for="cidade">Cidade*</label>
                         <select id="cidade" name="cidade" required>
                             <option value="">Selecione</option>
-                            
                         </select>
                     </div>
 
@@ -211,8 +210,150 @@
             </div>
 
             <div class="tab-content" id="documentos">
-                <h3>Documentos</h3>
-                <p>Conteúdo da aba Documentos.</p>
+                <form>
+                    <div class="documentos-id">
+                        <h3>Documentos de Identificação</h3>
+                        <label>Número</label>
+                        <input type="number" id="numero" name="numero" required>
+
+                        <label>Data de emissão*</label>
+                        <input type="date" required>
+
+                        <label>Órgão emissor</label>
+                        <input type="text" style=" text-transform: uppercase;">
+
+                        
+                        <label for="uf-emissao">UF de emissão*</label>
+                        <select id="uf-emissao" name="uf-emissao" required>
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre (AC)</option>
+                            <option value="AL">Alagoas (AL)</option>
+                            <option value="AP">Amapá (AP)</option>
+                            <option value="AM">Amazonas (AM)</option>
+                            <option value="BA">Bahia (BA)</option>
+                            <option value="CE">Ceará (CE)</option>
+                            <option value="DF">Distrito Federal (DF)</option>
+                            <option value="ES">Espírito Santo (ES)</option>
+                            <option value="GO">Goiás (GO)</option>
+                            <option value="MA">Maranhão (MA)</option>
+                            <option value="MT">Mato Grosso (MT)</option>
+                            <option value="MS">Mato Grosso do Sul (MS)</option>
+                            <option value="MG">Minas Gerais (MG)</option>
+                            <option value="PA">Pará (PA)</option>
+                            <option value="PB">Paraíba (PB)</option>
+                            <option value="PR">Paraná (PR)</option>
+                            <option value="PE">Pernambuco (PE)</option>
+                            <option value="PI">Piauí (PI)</option>
+                            <option value="RJ">Rio de Janeiro (RJ)</option>
+                            <option value="RN">Rio Grande do Norte (RN)</option>
+                            <option value="RS">Rio Grande do Sul (RS)</option>
+                            <option value="RO">Rondônia (RO)</option>
+                            <option value="RR">Roraima (RR)</option>
+                            <option value="SC">Santa Catarina (SC)</option>
+                            <option value="SP">São Paulo (SP)</option>
+                            <option value="SE">Sergipe (SE)</option>
+                            <option value="TO">Tocantins (TO)</option>
+                        </select>
+                        
+                    </div>
+                    
+                    <div class="cpf">
+                        <h3>CPF</h3>
+                        <label for="cpf1">CPF*</label>
+                        <input type="number" id="cpf1" name="cpf1" maxlength="11" pattern="\d{11}" required>
+
+                        <label for="cpf2">CPF do responsável</label>
+                        <input type="number" id="cpf2" name="cpf2" maxlength="11" pattern="\d{11}" >
+                    </div>
+
+                    <div class="certidão">
+                        <h3>Certidão</h3>
+                        <div class="checkbox-cert">
+                            <label>
+                                <input type="checkbox"> Certidão modelo novo?
+                            </label>
+                        </div>
+                        <label for="matricula">Matrícula</label>
+                        <input type="number" id="matricula" name="matricula" maxlength="13" pattern="\d{13}" >
+
+                        <label for="tipo-mat">Tipo*</label>
+                        <select id="tipo-mat" name="tipo-mat" required>
+                            <option value="">Selecione</option>
+                        </select>
+
+                        <label for="num-mat">Número</label>
+                        <input type="number" id="num-mat" name="num-mat" maxlength="13" pattern="\d{13}" >
+
+                        <label for="liv-mat">Livro</label>
+                        <input type="number" id="liv-mat" name="liv-mat" maxlength="10" pattern="\d{10}" >
+
+                        <label for="folha-mat">Folha</label>
+                        <input type="number" id="folha-mat" name="folha-mat" maxlength="5" pattern="\d{5}" >
+
+                        <label>Cartório</label>
+                        <input type="text" style=" text-transform: uppercase;">
+
+                        <label for="uf-exped">UF de expedição</label>
+                        <select id="uf-exped" name="uf-exped">
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre (AC)</option>
+                            <option value="AL">Alagoas (AL)</option>
+                            <option value="AP">Amapá (AP)</option>
+                            <option value="AM">Amazonas (AM)</option>
+                            <option value="BA">Bahia (BA)</option>
+                            <option value="CE">Ceará (CE)</option>
+                            <option value="DF">Distrito Federal (DF)</option>
+                            <option value="ES">Espírito Santo (ES)</option>
+                            <option value="GO">Goiás (GO)</option>
+                            <option value="MA">Maranhão (MA)</option>
+                            <option value="MT">Mato Grosso (MT)</option>
+                            <option value="MS">Mato Grosso do Sul (MS)</option>
+                            <option value="MG">Minas Gerais (MG)</option>
+                            <option value="PA">Pará (PA)</option>
+                            <option value="PB">Paraíba (PB)</option>
+                            <option value="PR">Paraná (PR)</option>
+                            <option value="PE">Pernambuco (PE)</option>
+                            <option value="PI">Piauí (PI)</option>
+                            <option value="RJ">Rio de Janeiro (RJ)</option>
+                            <option value="RN">Rio Grande do Norte (RN)</option>
+                            <option value="RS">Rio Grande do Sul (RS)</option>
+                            <option value="RO">Rondônia (RO)</option>
+                            <option value="RR">Roraima (RR)</option>
+                            <option value="SC">Santa Catarina (SC)</option>
+                            <option value="SP">São Paulo (SP)</option>
+                            <option value="SE">Sergipe (SE)</option>
+                            <option value="TO">Tocantins (TO)</option>
+                        </select>
+
+                        <label for="cidade-exped">Cidade expedição</label>
+                        <select id="cidade-exped" name="cidade-exped">
+                            <option value="">Selecione</option>
+                        </select>
+
+                    </div>
+
+                    <div class="passaporte-ant">
+                        <h3>Passaporte anterior</h3>
+                        <label for="situ">Situação</label>
+                        <select id="situ" name="situ" required>
+                            <option value="">Selecione</option>
+                        </select>
+
+                        <label for="serie">Série</label>
+                        <input type="text" id="serie" name="serie" maxlength="3" pattern="\d{3}" >
+
+                        <label for="num-pass">Número</label>
+                        <input type="number" id="num-pass" name="num-pass" maxlength="6" pattern="\d{6}" >
+                        
+                        <span>(Exemplo: Para o passaporte CP999999 a série é CP e o número é 999999)</span>
+                    </div>
+                    
+                    
+
+
+
+                </form>
+            
             </div>
 
             <div class="tab-content" id="complementares">
