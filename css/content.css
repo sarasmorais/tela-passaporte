@@ -182,7 +182,7 @@ main {
   color: var(--secondary-color);
   margin-bottom: 20px;
   font-size: 1.3rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   padding-bottom: 10px;
 }
 
@@ -203,7 +203,7 @@ select {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.05);
   transition: var(--transition);
   color: var(--cor-texto);
 }
@@ -334,7 +334,7 @@ select:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  row-gap: 5px;
   align-items: center;  
   
 }
@@ -342,8 +342,6 @@ select:focus {
 .documentos-id label{
   display: flex;
   justify-content: center;
-
-  
 }
 
 .documentos-id h3{
@@ -354,7 +352,7 @@ select:focus {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  row-gap: 5px;
   align-items: center;  
 
 }
@@ -374,8 +372,8 @@ select:focus {
   display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 10px;
   align-items: center;  
+  row-gap: 5px;
 }
 
 .certidão h3{
@@ -406,13 +404,54 @@ select:focus {
 
 #documentos input{
   height: 40px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+  color: var(--cor-texto);
 }
 
 #documentos select{
   height: 50px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  color: var(--cor-texto);
 }
 
 .passaporte-ant span{
   font-size: small;
   color: var(--cor-texto);
+}
+
+.passaporte-ant {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  align-items: center;
+  row-gap: 5px; /* Ajusta o espaçamento entre as linhas do grid */
+}
+
+.passaporte-ant h3 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  margin-bottom: 5px; 
+}
+
+label[for="situ"] {
+  grid-column: 1 / 3;
+  margin-top: 3px; 
+}
+
+.passaporte-ant select {
+  grid-column: 1/3;
+  margin-top: 0;
+}
+
+label[for="serie"] {
+  /*TERMINAR AQUI!*/
+  display: flex;
 }
