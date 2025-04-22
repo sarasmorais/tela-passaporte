@@ -200,7 +200,7 @@ select {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.0);
   transition: var(--transition);
   color: var(--cor-texto);
 }
@@ -212,6 +212,11 @@ select:focus {
   border-bottom: 2px solid var(--primary-color);
   background-color: rgba(0, 102, 204, 0.05);
   
+}
+
+option {
+  background-color: var(--cor-fundo-card);
+  color: var(--cor-texto);
 }
 
   .checkbox-group{
