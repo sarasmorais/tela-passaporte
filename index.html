@@ -260,10 +260,10 @@
                     <div class="cpf">
                         <h3>CPF</h3>
                         <label for="cpf1">CPF*</label>
-                        <input type="number" id="cpf1" name="cpf1" maxlength="11" pattern="\d{11}" required>
+                        <input type="number" id="cpf" name="cpf" maxlength="11" pattern="\d{11}" required>
 
                         <label for="cpf2">CPF do responsável</label>
-                        <input type="number" id="cpf2" name="cpf2" maxlength="11" pattern="\d{11}" >
+                        <input type="number" id="cpf2" name="cpf2" maxlength="11" pattern="\d{11}">
                     </div>
 
                     <div class="certidão">
@@ -357,8 +357,82 @@
             </div>
 
             <div class="tab-content" id="complementares">
-                <h3>Dados Complementares</h3>
-                <p>Conteúdo da aba Dados Complementares.</p>
+                <form>
+                    <div class="dados-compl">
+                        <h3>Dados Complementares</h3>
+                
+                    <label for="profissao">Profissão</label>
+                    <input type="text" id="profissao" style=" text-transform: uppercase;">
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="email">Confirmação de e-mail</label>
+                    <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="endereco">
+                        <h3>Endereço do requerente</h3>
+
+                        <label for="pais-req">País*</label>
+                        <input type="text" id="pais-req" value="BRASIL" required>
+
+                        <label for="cep">CEP*</label>
+                        <input type="number" id="cep" name="cep" maxlength="8" required pattern="\d{8}">
+
+                        <label for="uf-req">UF de expedição</label>
+                        <select id="uf-req" name="uf-req">
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre (AC)</option>
+                            <option value="AL">Alagoas (AL)</option>
+                            <option value="AP">Amapá (AP)</option>
+                            <option value="AM">Amazonas (AM)</option>
+                            <option value="BA">Bahia (BA)</option>
+                            <option value="CE">Ceará (CE)</option>
+                            <option value="DF">Distrito Federal (DF)</option>
+                            <option value="ES">Espírito Santo (ES)</option>
+                            <option value="GO">Goiás (GO)</option>
+                            <option value="MA">Maranhão (MA)</option>
+                            <option value="MT">Mato Grosso (MT)</option>
+                            <option value="MS">Mato Grosso do Sul (MS)</option>
+                            <option value="MG">Minas Gerais (MG)</option>
+                            <option value="PA">Pará (PA)</option>
+                            <option value="PB">Paraíba (PB)</option>
+                            <option value="PR">Paraná (PR)</option>
+                            <option value="PE">Pernambuco (PE)</option>
+                            <option value="PI">Piauí (PI)</option>
+                            <option value="RJ">Rio de Janeiro (RJ)</option>
+                            <option value="RN">Rio Grande do Norte (RN)</option>
+                            <option value="RS">Rio Grande do Sul (RS)</option>
+                            <option value="RO">Rondônia (RO)</option>
+                            <option value="RR">Roraima (RR)</option>
+                            <option value="SC">Santa Catarina (SC)</option>
+                            <option value="SP">São Paulo (SP)</option>
+                            <option value="SE">Sergipe (SE)</option>
+                            <option value="TO">Tocantins (TO)</option>
+                        </select>
+
+                        <label for="cidade-req">Cidade expedição</label>
+                        <select id="cidade-req" name="cidade-req">
+                            <option value="">Selecione</option>
+                        </select>
+
+                        <label for="log">Logradouro*</label>
+                        <input type="text" id="log" style="text-transform: uppercase;" required>
+
+                        <label for="bairro">Bairro*</label>
+                        <input type="text" id="bairro" style="text-transform: uppercase;" required>
+
+                        <label for="ddd">DDD*</label>
+                        <input type="number" id="cep" name="cep" maxlength="3" required pattern="\d{3}">
+
+                        <label for="tel">Telefone*</label>
+                        <input type="number" id="tel" name="tel" maxlength="9" required pattern="\d{9}">
+
+                    </div>
+                    
+
+                </form>
             </div>
 
             <div class="tab-content" id="revisar">
